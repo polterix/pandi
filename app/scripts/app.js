@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('pandiApp', ['ngRoute','ngAnimate'])
+angular.module('pandiApp', ['ngRoute','ngAnimate','firebase'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/test', {
-        templateUrl: 'views/test.html',
-        controller: 'testCtrl'
+      .when('/fathers', {
+        templateUrl: 'views/fathers.html',
+        controller: 'fathersCtrl'
       })
       .otherwise({
         redirectTo: '/'
