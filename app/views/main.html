@@ -1,1 +1,6 @@
-<h1>Pandi!</h1>
+<button type="submit" ng-click="deleteFather()">Delete</button>
+<button type="submit" ng-click="addFather()">Add</button>
+<h2>{{fathers.length}} elements : </h2>
+<table class="table">
+	<tr ng-repeat="(id, father) in fathers"><td>{{father.name}}</td></tr>
+</table>
